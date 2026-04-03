@@ -39,10 +39,10 @@ requirements:
 
 tests:
   - script:
-    - test -f $PREFIX/sbin/chronyd
-    - test -f $PREFIX/bin/chronyc
-    - $PREFIX/sbin/chronyd -v 2>&1 | grep -i chrony
-    - $PREFIX/bin/chronyc -v
+      - test -f $PREFIX/sbin/chronyd
+      - test -f $PREFIX/bin/chronyc
+      - $PREFIX/sbin/chronyd -v 2>&1 | grep -i chrony
+      - $PREFIX/bin/chronyc -v
 
 about:
   homepage: https://chrony-project.org
